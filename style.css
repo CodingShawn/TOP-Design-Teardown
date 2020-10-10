@@ -49,10 +49,16 @@ table {
 
 /* Own styling starts here */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     display: grid;
     grid-template-rows: 140px auto 670px;
 }
+
+/* Page header styling */
 
 .page-header {
     display: grid;
@@ -91,3 +97,84 @@ body {
     background-color: #666666;
 }
 
+/* Featured article styling */
+
+.featured-articles {
+    display: grid;
+    grid-template-rows: 100px auto;
+}
+
+.featured-articles-header {
+    justify-self: center;
+    font-size: 33px;
+    text-align: center;
+    background-color: #555555;
+    height: 100px;
+    width: 380px;
+}
+
+.featured-articles-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 850px) {
+    .featured-articles-container {  
+        grid-template-columns: 1fr;
+    }
+}
+
+.featured-article {
+    height: 500px;
+    display: grid;
+    grid-template-columns: 500px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto; 
+    grid-template-areas: 
+    "ft-author ft-author    ."
+    "ft-title  ft-title     ft-title"
+    "ft-tag    ft-tag       ft-tag";
+    grid-gap: 20px;
+    padding: 100px;
+}
+
+.featured-article-author {
+    grid-area: ft-author;
+    display: flex;
+    align-items: flex-end;
+}
+
+.featured-article-image {
+    width: 86px;
+    height: 96px;
+    background-color: #777777;
+}
+
+.author {
+    height: 30px;
+    width: 150px;
+    background-color: #888888;
+    align-self: center;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.featured-article-title {
+    grid-area: ft-title;
+    background-color: #666666;
+    width: 400px;
+    height: 96px;
+}
+
+.featured-article-tags {
+    grid-area: ft-tag;  
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 92px);
+    grid-gap: 33px;
+}
+
+.article-tag {
+    width: 92px;
+    height: 26px;
+    background-color: #bbbbbb;
+}
