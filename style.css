@@ -255,3 +255,102 @@ body {
     }
 }
 
+/* Article styling */
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-auto-flow: dense;
+}
+
+.article {
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 40px;
+    grid-gap: 20px;
+}
+
+.article-title {
+    width: 290px;
+    height: 125px;
+    background-color: #505050;
+}
+
+.article-author {
+    width: 150px;
+    height: 36px;
+    background-color: #dddddd;
+}
+
+.article-content {
+    width: 280px;
+    height: 160px;
+    background-color: #999999;
+}
+
+.partner-ad-grid {
+    display: flex;
+    height: 600px;
+    flex-direction: column;
+    padding: 40px;
+    align-items: center;
+}
+
+.partner-logo {
+    width: 175px;
+    height: 30px;
+    background-color: #666666;
+    margin-bottom: 20px;
+}
+
+.partner-description {
+    width: 265px;
+    height: 30px;
+    background-color: #aaaaaa;
+    margin-bottom: 20px;
+
+}
+
+.partner-btn {
+    width: 125px;
+    height: 35px;
+    background-color: #777777;
+}
+
+.smashing-membership-container {
+    height: 600px;
+    grid-column: span 2;
+    display: grid;
+    place-items: center;
+}
+
+.smashing-membership-logo {
+    width: 241px;
+    height: 290px;
+    background-color: #666666;
+}
+
+.smashing-membership-header {
+    width: 530px;
+    height: 75px;
+    background-color: #555555;
+}
+
+.smashing-membership-content {
+    width: 600px;
+    height: 100px;
+    background-color: #999999;
+}
+
+.smashing-membership-btn {
+    width: 220px;
+    height: 50px;
+    background-color: #555555;
+}
+
+.smashing-membership-signin {
+    width: 260px;
+    height: 30px;
+    background-color: #eeeeee;
+}
