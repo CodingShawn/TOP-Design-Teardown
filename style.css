@@ -51,6 +51,7 @@ table {
 
 * {
     box-sizing: border-box;
+    font-family: 'Dosis';
 }
 
 button {
@@ -61,6 +62,7 @@ button {
 body {
     display: grid;
     grid-template-rows: 140px auto auto;
+    color: white;
 }
 
 /* Page header styling */
@@ -113,9 +115,10 @@ body {
     justify-self: center;
     font-size: 33px;
     text-align: center;
-    background-color: #333333;
-    height: 100px;
-    width: 380px;
+    background-color: white;
+    font-size: 35px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 700;
 }
 
 .featured-articles-container {
@@ -164,10 +167,11 @@ body {
 }
 
 .featured-article-title {
-    grid-area: ft-title;
-    background-color: #606060;
-    width: 600px;
-    height: 150px;
+    grid-area: ft-title;   
+    font-size: 46px;
+    font-weight: 800;
+    background-color: #555555;
+    padding: 10px;
 }
 
 .featured-article-tags {
@@ -287,9 +291,13 @@ body {
 }
 
 .article-title {
-    width: 290px;
-    height: 125px;
     background-color: #505050;
+    font-size: 26px;
+    font-weight: 700;
+    word-spacing: 5px;
+    line-height: 1.5;
+    text-decoration: underline;
+    padding: 10px;
 }
 
 .article-author {
@@ -350,6 +358,10 @@ body {
     width: 530px;
     height: 75px;
     background-color: #555555;
+    font-size: 45px;
+    text-align: center;
+    padding: 15px;
+    font-weight: 800;
 }
 
 .smashing-membership-content {
@@ -398,6 +410,10 @@ body {
     width: 40%;
     height: 150px;
     background-color: #505050;
+    font-size: 50px;
+    font-weight: 800;
+    padding: 15px;
+    text-align: center;
 }
 
 .book-ad-desc {
@@ -493,11 +509,12 @@ body {
 }
 
 .mini-article-title {
-    width: 90%;
-    height: 30px;
     background-color: #606060;
     grid-column-start: 2;
     grid-row-start: 2;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 5px;
 }
 
 .mini-article-content {
@@ -540,6 +557,9 @@ body {
     height: 50px;
     background-color: #707070;
     grid-area: f-title;
+    font-size: 45px;
+    font-weight: 700;
+    padding: 5px;
 }
 
 .featured-book-desc {
@@ -600,10 +620,11 @@ body {
 }
 
 .smashing-guide-header-title {
-    width: 80%;
-    height: 70px;
     background-color: #505050;
     margin-top: 5px;
+    font-size: 40px;
+    font-weight: 700;
+    padding: 5px;
 }
 
 .smashing-guide-content {
@@ -639,6 +660,9 @@ body {
     width: 370px;
     height: 60px;
     background-color: #666666;
+    font-size: 40px;
+    font-weight: 700;
+    padding: 5px;
 }
 
 .newsletter-desc {
