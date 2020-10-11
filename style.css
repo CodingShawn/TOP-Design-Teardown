@@ -415,7 +415,7 @@ body {
 .book-ad-img {
     width: 50%;
     height: 500px;
-    background-color: #666666;
+    background-color: #606060;
 }
 
 /* Person of the week styling */
@@ -457,5 +457,58 @@ body {
         "week-img    ."
         "week-header ."
         "week-content week-content";
+    }
+}
+
+/* Mini articles styling */
+
+.mini-articles {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+}
+
+.mini-article {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 20px;
+}
+
+.mini-article-img {
+    width: 70px;
+    height: 70px;
+    background-color: #888888;
+    grid-column-start: 1;
+    grid-row: 1 / span 2;
+}
+
+.mini-article-author {
+    width: 180px;
+    height: 20px;
+    background-color: #bbbbbb;
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.mini-article-title {
+    width: 90%;
+    height: 30px;
+    background-color: #606060;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.mini-article-content {
+    width: 80%;
+    height: 130px;
+    background-color: #888888;
+    grid-column-start: 2;
+}
+
+@media screen and (max-width: 900px) {
+    .mini-articles {
+        grid-template-columns: 1fr;
     }
 }
