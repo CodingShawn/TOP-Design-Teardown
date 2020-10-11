@@ -369,3 +369,51 @@ body {
     height: 30px;
     background-color: #eeeeee;
 }
+
+.rest-of-articles {
+    width: 220px;
+    height: 25px;
+    background-color: #bbbbbb;
+    margin: 50px 0px;
+    justify-self: center;
+    grid-column: 1 / -1;
+}
+/* Book ad styling */
+
+.book-ad {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    place-items: center;
+}
+
+.book-ad-date {
+    width: 14%;
+    height: 20px;
+    background-color: #999999;
+}
+
+.book-ad-title {
+    width: 40%;
+    height: 150px;
+    background-color: #505050;
+}
+
+.book-ad-desc {
+    width: 50%;
+    height: 80px;
+    background-color: #777777;
+}
+
+.book-ad-btn {
+    width: 20%;
+    height: 66px;
+    background-color: #606060;
+}
+
+.book-ad-img {
+    width: 50%;
+    height: 500px;
+    background-color: #666666;
+}
