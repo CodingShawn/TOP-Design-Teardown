@@ -573,3 +573,92 @@ body {
         "f-btn .";
     }
 }
+
+/* Smashing guide styling */
+
+.smashing-guides {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 30%));
+    grid-gap: 20px;
+}
+
+.smashing-guide {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    align-content: start;
+}
+
+.smashing-guide-header-desc {
+    width: 230px;
+    height: 20px;
+    background-color: #999999;
+}
+
+.smashing-guide-header-title {
+    width: 80%;
+    height: 70px;
+    background-color: #505050;
+    margin-top: 5px;
+}
+
+.smashing-guide-content {
+    width: 90%;
+    height: 180px;
+    background-color: #888888;
+}
+
+.smashing-guide-btn {
+    width: 80%;
+    height: 100px;
+    background-color: #666666;
+}
+
+.centered {
+    grid-column-start: 2;
+}
+
+.newsletter-header {
+    display: grid;
+    grid-gap: 20px;
+}
+
+.newsletter-header-img {
+    width: 365px;
+    height: 365px;
+    border-radius: 50%;
+    background-color: #707070;
+    justify-self: center;
+}
+
+.newsletter-header-title {
+    width: 370px;
+    height: 60px;
+    background-color: #666666;
+}
+
+.newsletter-desc {
+    width: 90%;
+    height: 140px;
+    background-color: #888888 ;
+}
+
+.newsletter-signup {
+    width: 90%;
+    height: 67px;
+    background-color: #707070;
+}
+
+.newsletter-footer {
+    width: 400px;
+    height: 70px;
+    background-color: #999999;
+}
+
+@media screen and (max-width: 1000px) {
+    .smashing-guides {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
